@@ -1,0 +1,434 @@
+[
+    {
+        "session": "808bf1490ef8",
+        "timestamp": "2026-09-18T06:33:20.906193Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 57826,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "whoami",
+        "intent": "Display the username of the current user",
+        "behavior": "The command 'whoami' outputs the username of the currently logged-in user to the standard output.",
+        "mitre": {
+            "id": "T1033",
+            "name": "System Owner/User Discovery",
+            "score": 1.0,
+            "status": "accepted",
+            "reason": "whoami identifies the current user account"
+        }
+    },
+    {
+        "session": "808bf1490ef8",
+        "timestamp": "2026-09-18T06:33:20.907985Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 57826,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "pwd",
+        "intent": "Display the current working directory",
+        "behavior": "The 'pwd' command outputs the full path of the current working directory to the standard output.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.310089859366417,
+            "status": "no_technique",
+            "reason": "MITRE similarity below confidence threshold"
+        }
+    },
+    {
+        "session": "808bf1490ef8",
+        "timestamp": "2026-09-18T06:33:22.501156Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 57826,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "ls",
+        "intent": "List directory contents",
+        "behavior": "Lists all files and directories in the current directory",
+        "mitre": {
+            "id": "T1083",
+            "name": "File and Directory Discovery",
+            "score": 1.0,
+            "status": "accepted",
+            "reason": "ls lists files and directories"
+        }
+    },
+    {
+        "session": "808bf1490ef8",
+        "timestamp": "2026-09-18T06:33:30.388869Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 57826,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "whoami",
+        "intent": "Display the username of the current user",
+        "behavior": "The command 'whoami' outputs the username of the currently logged-in user to the standard output.",
+        "mitre": {
+            "id": "T1033",
+            "name": "System Owner/User Discovery",
+            "score": 1.0,
+            "status": "accepted",
+            "reason": "whoami identifies the current user account"
+        }
+    },
+    {
+        "session": "808bf1490ef8",
+        "timestamp": "2026-09-18T06:33:30.390295Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 57826,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "pwd",
+        "intent": "Display the current working directory",
+        "behavior": "The 'pwd' command outputs the full path of the current working directory to the standard output.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.310089859366417,
+            "status": "no_technique",
+            "reason": "MITRE similarity below confidence threshold"
+        }
+    },
+    {
+        "session": "808bf1490ef8",
+        "timestamp": "2026-09-18T06:33:34.584708Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 57826,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "ls",
+        "intent": "List directory contents",
+        "behavior": "Lists all files and directories in the current directory",
+        "mitre": {
+            "id": "T1083",
+            "name": "File and Directory Discovery",
+            "score": 1.0,
+            "status": "accepted",
+            "reason": "ls lists files and directories"
+        }
+    },
+    {
+        "session": "808bf1490ef8",
+        "timestamp": "2026-09-18T06:33:43.021473Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 57826,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "uname -a",
+        "intent": "Display system information",
+        "behavior": "Executes the uname -a command, which displays detailed system information such as kernel name, kernel release, kernel version, machine hardware name, and operating system name.",
+        "mitre": {
+            "id": "T1082",
+            "name": "System Information Discovery",
+            "score": 1.0,
+            "status": "accepted",
+            "reason": "uname -a retrieves operating system and kernel information"
+        }
+    },
+    {
+        "session": "808bf1490ef8",
+        "timestamp": "2026-09-18T06:33:50.734587Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 57826,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "exit",
+        "intent": "Exit the current command execution",
+        "behavior": "Terminates the current command execution and exits the shell session.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.4307511031627655,
+            "status": "no_technique",
+            "reason": "The provided examples do not match the described behavior of process argument spoofing or masquerading."
+        }
+    },
+    {
+        "session": "f00b2c850654",
+        "timestamp": "2026-09-18T17:52:33.500556Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 48340,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "whoami",
+        "intent": "Display the username of the current user",
+        "behavior": "The command 'whoami' outputs the username of the currently logged-in user to the standard output.",
+        "mitre": {
+            "id": "T1033",
+            "name": "System Owner/User Discovery",
+            "score": 1.0,
+            "status": "accepted",
+            "reason": "whoami identifies the current user account"
+        }
+    },
+    {
+        "session": "f00b2c850654",
+        "timestamp": "2026-09-18T17:52:38.734316Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 48340,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "pwd",
+        "intent": "Display the current working directory",
+        "behavior": "The 'pwd' command outputs the full path of the current working directory to the standard output.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.310089859366417,
+            "status": "no_technique",
+            "reason": "MITRE similarity below confidence threshold"
+        }
+    },
+    {
+        "session": "f00b2c850654",
+        "timestamp": "2026-09-18T17:52:41.605413Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 48340,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "ls",
+        "intent": "List directory contents",
+        "behavior": "Lists all files and directories in the current directory",
+        "mitre": {
+            "id": "T1083",
+            "name": "File and Directory Discovery",
+            "score": 1.0,
+            "status": "accepted",
+            "reason": "ls lists files and directories"
+        }
+    },
+    {
+        "session": "f00b2c850654",
+        "timestamp": "2026-09-18T17:52:49.190495Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 48340,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "uname -a",
+        "intent": "Display system information",
+        "behavior": "Executes the uname -a command, which displays detailed system information such as kernel name, kernel release, kernel version, machine hardware name, and operating system name.",
+        "mitre": {
+            "id": "T1082",
+            "name": "System Information Discovery",
+            "score": 1.0,
+            "status": "accepted",
+            "reason": "uname -a retrieves operating system and kernel information"
+        }
+    },
+    {
+        "session": "f00b2c850654",
+        "timestamp": "2026-09-18T17:52:52.940908Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 48340,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "exit",
+        "intent": "Exit the current command execution",
+        "behavior": "Terminates the current command execution and exits the shell session.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.4307511031627655,
+            "status": "no_technique",
+            "reason": "The provided examples do not match the described behavior of process argument spoofing or masquerading."
+        }
+    },
+    {
+        "session": "b9b964e7d9db",
+        "timestamp": "2026-09-18T19:21:42.072732Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 47200,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "whoami",
+        "intent": "Display the username of the current user",
+        "behavior": "The command 'whoami' outputs the username of the currently logged-in user to the standard output.",
+        "mitre": {
+            "id": "T1033",
+            "name": "System Owner/User Discovery",
+            "score": 1.0,
+            "status": "accepted",
+            "reason": "whoami identifies the current user account"
+        }
+    },
+    {
+        "session": "b9b964e7d9db",
+        "timestamp": "2026-09-18T19:22:22.753584Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 47200,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "echo hello_aria",
+        "intent": "Display the string 'hello_aria' in the terminal",
+        "behavior": "The command 'echo hello_aria' will output the string 'hello_aria' to the terminal.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.2948138192296028,
+            "status": "no_technique",
+            "reason": "MITRE similarity below confidence threshold"
+        }
+    },
+    {
+        "session": "b9b964e7d9db",
+        "timestamp": "2026-09-18T19:22:30.945672Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 47200,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "what_is_this",
+        "intent": "Execute a command named 'what_is_this'",
+        "behavior": "Attempts to execute a command named 'what_is_this', but does not specify what the command does or what its actual behavior is.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.33080876618623734,
+            "status": "no_technique",
+            "reason": "MITRE similarity below confidence threshold"
+        }
+    },
+    {
+        "session": "108ca9a7ec90",
+        "timestamp": "2026-09-18T19:28:09.217367Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 32874,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "whoami",
+        "intent": "Display the username of the current user",
+        "behavior": "The command 'whoami' outputs the username of the currently logged-in user to the standard output.",
+        "mitre": {
+            "id": "T1033",
+            "name": "System Owner/User Discovery",
+            "score": 1.0,
+            "status": "accepted",
+            "reason": "whoami identifies the current user account"
+        }
+    },
+    {
+        "session": "108ca9a7ec90",
+        "timestamp": "2026-09-18T19:28:18.201737Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 32874,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "pwd",
+        "intent": "Display the current working directory",
+        "behavior": "The 'pwd' command outputs the full path of the current working directory to the standard output.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.310089859366417,
+            "status": "no_technique",
+            "reason": "MITRE similarity below confidence threshold"
+        }
+    },
+    {
+        "session": "108ca9a7ec90",
+        "timestamp": "2026-09-18T19:28:26.330202Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 32874,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "ls",
+        "intent": "List directory contents",
+        "behavior": "Lists all files and directories in the current directory",
+        "mitre": {
+            "id": "T1083",
+            "name": "File and Directory Discovery",
+            "score": 1.0,
+            "status": "accepted",
+            "reason": "ls lists files and directories"
+        }
+    },
+    {
+        "session": "108ca9a7ec90",
+        "timestamp": "2026-09-18T19:28:37.201996Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 32874,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "what_is_this",
+        "intent": "Execute a command named 'what_is_this'",
+        "behavior": "Attempts to execute a command named 'what_is_this', but does not specify what the command does or what its actual behavior is.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.33080876618623734,
+            "status": "no_technique",
+            "reason": "MITRE similarity below confidence threshold"
+        }
+    },
+    {
+        "session": "108ca9a7ec90",
+        "timestamp": "2026-09-18T19:29:41.443683Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 32874,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "exit",
+        "intent": "Exit the current command execution",
+        "behavior": "Terminates the current command execution and exits the shell session.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.4307511031627655,
+            "status": "no_technique",
+            "reason": "The provided examples do not match the described behavior of process argument spoofing or masquerading."
+        }
+    },
+    {
+        "session": "108ca9a7ec90",
+        "timestamp": "2026-09-18T19:29:48.315195Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 32874,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "exit",
+        "intent": "Exit the current command execution",
+        "behavior": "Terminates the current command execution and exits the shell session.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.4307511031627655,
+            "status": "no_technique",
+            "reason": "The provided examples do not match the described behavior of process argument spoofing or masquerading."
+        }
+    },
+    {
+        "session": "108ca9a7ec90",
+        "timestamp": "2026-09-18T19:29:56.403707Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 32874,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "docker exec cowrie /cowrie/cowrie-env/bin/python3 -c \"from pathlib import Path; p=Path('/cowrie/cowrie-git/var/log/cowrie/cowrie.json'); print(p.exists()); print(p)\"",
+        "intent": "Check the existence and print the path of a JSON file in the Cowrie log directory",
+        "behavior": "Attempts to determine if a JSON file at the path '/cowrie/cowrie-git/var/log/cowrie/cowrie.json' exists and prints its existence status.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.21391526609659195,
+            "status": "no_technique",
+            "reason": "MITRE similarity below confidence threshold"
+        }
+    },
+    {
+        "session": "108ca9a7ec90",
+        "timestamp": "2026-09-18T19:30:13.331668Z",
+        "src_ip": "172.17.0.1",
+        "src_port": 32874,
+        "dst_ip": "172.17.0.2",
+        "dst_port": 2222,
+        "command": "exit",
+        "intent": "Exit the current command execution",
+        "behavior": "Terminates the current command execution and exits the shell session.",
+        "mitre": {
+            "id": null,
+            "name": null,
+            "score": 0.4307511031627655,
+            "status": "no_technique",
+            "reason": "The provided examples do not match the described behavior of process argument spoofing or masquerading."
+        }
+    }
+]
